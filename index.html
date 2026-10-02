@@ -1,81 +1,180 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TokPilote — Gestion de contenu vidéo</title>
 
-    <title>TokPilote — Création de contenu vidéo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    <meta
-        name="description"
-        content="TokPilote est une plateforme de création, préparation et gestion de contenu vidéo pour les réseaux sociaux."
-    >
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f7fb;
+      color: #161823;
+    }
+
+    header {
+      background: #161823;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 55px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .tiktok-button {
+      display: inline-block;
+      padding: 15px 28px;
+      background: #161823;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.06);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .step {
+      background: #f6f7fb;
+      padding: 22px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      color: #666;
+    }
+
+    footer a {
+      color: #161823;
+      margin: 0 10px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <h1>TokPilote</h1>
-
-    <p>
-        Créez, préparez et gérez votre contenu vidéo
-        depuis un seul espace.
-    </p>
+  <h1>TokPilote</h1>
+  <span>Gestion de contenu vidéo</span>
 </header>
 
-<main>
+<section class="hero">
+  <h2>Créez, gérez et publiez vos vidéos</h2>
 
-    <section>
-        <h2>Qu'est-ce que TokPilote ?</h2>
+  <p>
+    TokPilote est une plateforme web permettant de préparer et gérer
+    facilement vos contenus vidéo et de connecter votre compte TikTok.
+  </p>
 
+  <a
+    class="tiktok-button"
+    href="https://tokpilote-backend.onrender.com/auth/tiktok"
+  >
+    Connecter mon compte TikTok
+  </a>
+</section>
+
+<main class="container">
+
+  <section class="card">
+    <h3>Comment fonctionne TokPilote ?</h3>
+
+    <div class="steps">
+
+      <div class="step">
+        <strong>1. Connexion TikTok</strong>
         <p>
-            TokPilote est une solution destinée aux créateurs
-            de contenu qui souhaitent préparer et gérer leurs
-            publications vidéo pour les plateformes sociales.
+          Connectez votre compte TikTok de manière sécurisée.
         </p>
-    </section>
+      </div>
 
-    <section>
-        <h2>Comment fonctionne TokPilote ?</h2>
-
+      <div class="step">
+        <strong>2. Préparation</strong>
         <p>
-            TokPilote permet de préparer une campagne vidéo,
-            générer les éléments nécessaires à sa publication,
-            effectuer des contrôles de qualité et préparer
-            sa diffusion sur les plateformes compatibles.
+          Préparez le contenu vidéo que vous souhaitez envoyer vers TikTok.
         </p>
-    </section>
+      </div>
 
-    <section>
-        <h2>Notre objectif</h2>
-
+      <div class="step">
+        <strong>3. Téléversement</strong>
         <p>
-            Simplifier la préparation et la gestion du contenu
-            vidéo tout en laissant au créateur le contrôle
-            de ses publications.
+          Envoyez votre vidéo vers TikTok afin de poursuivre sa préparation
+          et sa publication.
         </p>
-    </section>
+      </div>
 
-    <section>
-        <h2>Informations légales</h2>
+    </div>
+  </section>
 
-        <p>
-            <a href="privacy.html">
-                Politique de confidentialité
-            </a>
-        </p>
+  <section class="card">
+    <h3>Connexion sécurisée</h3>
 
-        <p>
-            <a href="terms.html">
-                Conditions d'utilisation
-            </a>
-        </p>
-    </section>
+    <p>
+      TokPilote utilise l'autorisation TikTok pour permettre aux utilisateurs
+      de connecter leur propre compte. TokPilote n'accède qu'aux autorisations
+      accordées par l'utilisateur.
+    </p>
+  </section>
 
 </main>
 
 <footer>
-    <p>© 2026 TokPilote</p>
+  <p>© 2026 TokPilote</p>
+
+  <a href="terms.html">Conditions d'utilisation</a>
+  <a href="privacy.html">Politique de confidentialité</a>
 </footer>
 
 </body>
